@@ -14,6 +14,36 @@
     <!-- Your CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+    ```html
+<script>
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+
+document.querySelectorAll(".zoomable-image").forEach(img => {
+
+    img.addEventListener("click", function () {
+
+        modal.style.display = "block";
+        modalImg.src = this.src;
+
+    });
+
+});
+
+document.querySelector(".image-modal-close").onclick = function () {
+    modal.style.display = "none";
+};
+
+modal.onclick = function (e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
+</script>
+```
+
 
 <body>
 <div class="page-shell">
@@ -155,7 +185,8 @@ The Sustainable Nutrition Recommendation System is a full-stack web application 
                 </div>
             </section>
 
-           ```html
+           
+```html
 <!-- ========================= ARCHITECTURE ========================= -->
 <section id="architecture" class="section">
 
@@ -193,45 +224,113 @@ React Frontend Interface
 
     <div class="diagram-grid">
 
+        <!-- OVERALL ARCHITECTURE -->
         <figure class="diagram-card">
+
             <img src="assets/diagrams/architecture.png"
-                 alt="Overall system architecture">
+                 alt="Overall system architecture"
+                 class="zoomable-image">
+
             <figcaption>
                 Layered architecture showing Python preprocessing,
                 MySQL integration, Spring Boot APIs and React frontend interaction.
             </figcaption>
+
         </figure>
 
+        <!-- PREPROCESSING PIPELINE -->
         <figure class="diagram-card">
+
             <img src="assets/diagrams/preprocessing.png"
-                 alt="Python preprocessing pipeline">
+                 alt="Python preprocessing pipeline"
+                 class="zoomable-image">
+
             <figcaption>
                 Python preprocessing workflow for nutritional,
                 recipe and sustainability dataset integration.
             </figcaption>
+
         </figure>
 
+        <!-- DATABASE ERD -->
         <figure class="diagram-card">
+
             <img src="assets/diagrams/erd.png"
-                 alt="Database ERD">
+                 alt="Database ERD"
+                 class="zoomable-image">
+
             <figcaption>
                 MySQL relational schema linking recipes,
                 ingredients, nutrition, sustainability and pantry data.
             </figcaption>
+
         </figure>
 
+        <!-- RECOMMENDATION LOGIC -->
         <figure class="diagram-card">
+
             <img src="assets/diagrams/recommendation-logic.png"
-                 alt="Recommendation decision logic">
+                 alt="Recommendation decision logic"
+                 class="zoomable-image">
+
             <figcaption>
                 Transparent rule-based recommendation logic combining nutrition,
                 CO₂e impact, pantry reuse and expiry-aware prioritisation.
             </figcaption>
+
         </figure>
 
     </div>
 
 </section>
+
+<!-- ========================= IMAGE MODAL ========================= -->
+<div id="imageModal" class="image-modal">
+
+    <span class="image-modal-close">&times;</span>
+
+    <img class="image-modal-content"
+         id="modalImage"
+         alt="Expanded architecture image">
+
+</div>
+
+<!-- ========================= IMAGE ZOOM SCRIPT ========================= -->
+<script>
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+
+document.querySelectorAll(".zoomable-image").forEach(img => {
+
+    img.addEventListener("click", function () {
+
+        modal.style.display = "block";
+        modalImg.src = this.src;
+
+    });
+
+});
+
+document.querySelector(".image-modal-close").onclick = function () {
+
+    modal.style.display = "none";
+
+};
+
+modal.onclick = function (e) {
+
+    if (e.target === modal) {
+
+        modal.style.display = "none";
+
+    }
+
+};
+
+</script>
+
+
 ```
 
 
