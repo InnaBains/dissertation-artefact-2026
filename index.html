@@ -2,81 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sustainable Nutrition Recommendation System – Dissertation Artefact</title>
+    <title>Sustainable Nutrition Recommendation System – Artefact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Font -->
+    <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
+    <!-- Your CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 <div class="page-shell">
 
-    <!-- NAVBAR -->
+    <!-- ========================= NAVBAR ========================= -->
     <header class="nav">
         <div class="nav-inner">
+
             <div class="nav-left">
                 <div class="nav-logo">SN</div>
-                <div>
-                    <div class="nav-title">Sustainable Nutrition Recommendation System</div>
-                    <div class="nav-sub">BSc (Hons) Computing Dissertation · Arden University</div>
-                </div>
+                <div class="nav-title">Sustainable Nutrition Recommendation System</div>
             </div>
+
             <div class="nav-right">
-                <div class="nav-pill">
-                    <i class="fa-solid fa-user-graduate"></i>
-                    <span>Author: Inna Bains</span>
-                </div>
-                <div class="nav-tag">
-                    <i class="fa-solid fa-seedling"></i>
-                    Smart Meal Planning for a Better Future
-                </div>
+                <a href="#demo" class="nav-pill">Demo</a>
+                <a href="#features" class="nav-pill">Features</a>
+                <a href="#architecture" class="nav-pill">Architecture</a>
+                <a href="#screenshots" class="nav-pill">Screenshots</a>
+                <a href="#run" class="nav-pill">Run System</a>
             </div>
+
         </div>
     </header>
 
     <main>
         <div class="container">
 
-            <!-- HERO WITH VIDEO -->
+            <!-- ========================= HERO ========================= -->
             <section class="hero">
+
                 <div class="hero-media">
                     <div class="hero-media-bg">
-                        <img src="assets/Title.png" alt="Dissertation Poster" class="hero-poster-bg">
+                        <img src="assets/Title.png" class="hero-poster-bg" alt="">
                     </div>
+
                     <div class="hero-video-wrapper">
-                        <div class="hero-video-wrapper">
-    <div class="hero-video-embed">
-        <iframe
-            src="https://www.youtube.com/embed/Cdsmm7Sak5Y?rel=0&modestbranding=1&autoplay=1&mute=1&loop=1&playlist=Cdsmm7Sak5Y"
-            title="Sustainable Nutrition Recommendation System Demo"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            loading="lazy">
-        </iframe>
-    </div>
-    <div class="hero-video-overlay"></div>
-    <div class="hero-video-label">
-        <i class="fa-solid fa-circle-play"></i>
-        Live demo · 10 minutes walkthrough
-    </div>
-</div>
-
-
-
-
+                        <div class="hero-video-embed">
+                            <iframe src="https://www.youtube.com/embed/Cdsmm7Sak5Y?rel=0&modestbranding=1&mute=1&autoplay=1&loop=1&playlist=Cdsmm7Sak5Y"
+                                    title="Demo" allowfullscreen loading="lazy"></iframe>
+                        </div>
                         <div class="hero-video-overlay"></div>
                         <div class="hero-video-label">
-                            <i class="fa-solid fa-circle-play"></i>
-                            Live demo · 10 minutes walkthrough
+                            <i class="fa-solid fa-circle-play"></i> Live Demo · 10 Minutes
                         </div>
                     </div>
                 </div>
@@ -84,7 +64,7 @@
                 <div class="hero-content">
                     <div class="hero-kicker">
                         <span class="badge">Dissertation Artefact</span>
-                        <span><i class="fa-solid fa-circle-nodes"></i> Rule‑based sustainable meal planning for UK students</span>
+                        <span><i class="fa-solid fa-circle-nodes"></i> Rule‑based sustainable meal planning</span>
                     </div>
 
                     <h1 class="hero-title">
@@ -93,447 +73,212 @@
                     </h1>
 
                     <p class="hero-subtitle">
-                        A transparent, rule‑based web application that helps UK university students generate weekly meal plans
-                        that balance <strong>nutritional quality</strong>, <strong>environmental sustainability</strong>, and
-                        <strong>household ingredient reuse</strong> to reduce avoidable food waste.
+                        A full‑stack web application integrating nutritional analysis, CO₂e sustainability indicators,
+                        pantry‑aware ingredient reuse and expiry‑date prioritisation into a transparent rule‑based
+                        recommendation framework for UK university students.
                     </p>
 
-                    <div class="hero-meta">
-                        <div class="hero-meta-item">
-                            <i class="fa-solid fa-utensils"></i>
-                            <span>Aligned with NHS Eatwell dietary guidelines</span>
-                        </div>
-                        <div class="hero-meta-item">
-                            <i class="fa-solid fa-cloud-arrow-down"></i>
-                            <span>CoFID 2021 · Poore &amp; Nemecek (2018) · Kaggle recipes</span>
-                        </div>
-                        <div class="hero-meta-item">
-                            <i class="fa-solid fa-scale-balanced"></i>
-                            <span>Nutrition · CO₂e · Pantry reuse</span>
-                        </div>
-                    </div>
-
                     <div class="hero-actions">
-                        <a class="btn-primary" href="#demo">
-                            <i class="fa-solid fa-play"></i>
-                            Watch Full Demo
-                        </a>
-                        <a class="btn-ghost" href="#overview">
-                            <i class="fa-solid fa-circle-info"></i>
-                            View System Overview
-                        </a>
+                        <a href="#demo" class="btn-primary"><i class="fa-solid fa-play"></i> Watch Demo</a>
+                        <a href="#overview" class="btn-ghost"><i class="fa-solid fa-circle-info"></i> System Overview</a>
                     </div>
 
                     <div class="hero-footnote">
                         <i class="fa-solid fa-circle-check"></i>
-                        Implemented using React.js, Spring Boot, MySQL and Python‑based preprocessing with a transparent,
-                        rule‑based recommendation engine.
+                        Built with React.js · Spring Boot · MySQL · Python
                     </div>
                 </div>
+
             </section>
 
-            <!-- DEMO SECTION (ANCHOR) -->
+            <!-- ========================= DEMO ========================= -->
             <section id="demo" class="section">
                 <div class="section-header">
                     <div>
                         <div class="section-kicker">Demo</div>
-                        <h2 class="section-title">System walkthrough – 10 minute video</h2>
+                        <h2 class="section-title">System Demonstration</h2>
                     </div>
                     <p class="section-description">
-                        This demo video showcases the full workflow of the Sustainable Nutrition Recommendation System,
-                        including dataset integration, pantry management, weekly meal planning, sustainability indicators,
-                        and dynamic pantry deduction after cooking.
+                        A walkthrough of weekly meal planning, pantry-aware prioritisation, sustainability indicators,
+                        recommendation explainability and dynamic pantry deduction.
                     </p>
                 </div>
 
-              <div class="demo-video-frame">
-    <div class="hero-video-embed">
-        <iframe
-            src="https://www.youtube.com/embed/Cdsmm7Sak5Y?rel=0&modestbranding=1"
-            title="Sustainable Nutrition Recommendation System Demo"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            loading="lazy">
-        </iframe>
-    </div>
-</div>
-
-
-                <div class="demo-actions">
-                    <a class="btn-ghost" href="assets/Demo_video.mp4" download>
-                        <i class="fa-solid fa-download"></i>
-                        Download Demo Video
-                    </a>
+                <div class="demo-video-frame">
+                    <div class="hero-video-embed">
+                        <iframe src="https://www.youtube.com/embed/Cdsmm7Sak5Y?rel=0&modestbranding=1"
+                                title="Demo" allowfullscreen loading="lazy"></iframe>
+                    </div>
                 </div>
             </section>
 
-            <!-- OVERVIEW -->
+            <!-- ========================= OVERVIEW ========================= -->
             <section id="overview" class="section">
                 <div class="section-header">
                     <div>
-                        <div class="section-kicker">Project overview</div>
-                        <h2 class="section-title">Integrating nutrition, sustainability and pantry reuse</h2>
+                        <div class="section-kicker">Project Overview</div>
+                        <h2 class="section-title">Purpose & Contribution</h2>
                     </div>
                     <p class="section-description">
-                        This artefact addresses the gap identified in the dissertation: most existing applications treat
-                        nutrition tracking, environmental sustainability and household food waste reduction separately.
-                        The system combines nutritional composition data, CO₂e indicators and pantry‑aware logic into a
-                        single, interpretable decision‑support framework for UK university students.
+                        A concise summary of the artefact’s purpose and academic contribution.
+                    </p>
+                </div>
+
+                <p class="section-description">
+                    The Sustainable Nutrition Recommendation System is a full‑stack web application designed to support
+                    nutrition‑aware, sustainability‑aware and pantry‑aware meal planning. The framework integrates
+                    nutritional composition data, CO₂e sustainability indicators, ingredient reuse and expiry‑date
+                    prioritisation into a transparent rule‑based recommendation engine. Unlike calorie‑tracking apps,
+                    this system directly incorporates pantry management and food‑waste reduction into the recommendation
+                    process.
+                </p>
+            </section>
+
+            <!-- ========================= FEATURES ========================= -->
+            <section id="features" class="section">
+                <div class="section-header">
+                    <div>
+                        <div class="section-kicker">Key Features</div>
+                        <h2 class="section-title">Designed for Real Student Needs</h2>
+                    </div>
+                    <p class="section-description">
+                        Core functionality implemented in the artefact.
                     </p>
                 </div>
 
                 <div class="grid-3">
-                    <article class="card">
-                        <div class="card-icon">
-                            <i class="fa-solid fa-heart-pulse"></i>
-                        </div>
-                        <div class="card-title">Nutritionally balanced weekly plans</div>
-                        <div class="card-text">
-                            Recipes are evaluated against NHS Eatwell dietary guidelines using the UK CoFID 2021 dataset,
-                            supporting balanced weekly meal planning rather than isolated single‑meal choices.
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon">
-                            <i class="fa-solid fa-earth-europe"></i>
-                        </div>
-                        <div class="card-title">CO₂e‑aware sustainability indicators</div>
-                        <div class="card-text">
-                            Environmental impact data from Poore &amp; Nemecek (2018) is mapped to recipe ingredients,
-                            enabling relative CO₂e labels and sustainability categories for each meal.
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon">
-                            <i class="fa-solid fa-kitchen-set"></i>
-                        </div>
-                        <div class="card-title">Pantry‑aware, waste‑risk‑sensitive logic</div>
-                        <div class="card-text">
-                            The system models a student pantry, prioritising ingredients close to expiry, maximising reuse
-                            of existing items and dynamically deducting quantities when recipes are marked as cooked.
-                        </div>
-                    </article>
+                    <article class="card"><div class="card-icon"><i class="fa-solid fa-calendar"></i></div><div class="card-title">Weekly Meal Planning</div><div class="card-text">Generate structured breakfast, lunch and dinner plans.</div></article>
+                    <article class="card"><div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div><div class="card-title">Nutrition‑Aware Scoring</div><div class="card-text">Supports balanced meal selection using nutritional indicators.</div></article>
+                    <article class="card"><div class="card-icon"><i class="fa-solid fa-earth-europe"></i></div><div class="card-title">CO₂e Sustainability Labels</div><div class="card-text">Displays environmental impact indicators for each recipe.</div></article>
+                    <article class="card"><div class="card-icon"><i class="fa-solid fa-kitchen-set"></i></div><div class="card-title">Pantry Management</div><div class="card-text">Track ingredient quantities, expiry dates and availability.</div></article>
+                    <article class="card"><div class="card-icon"><i class="fa-solid fa-hourglass-half"></i></div><div class="card-title">Expiry‑Aware Prioritisation</div><div class="card-text">Prioritise near‑expiry ingredients to reduce waste.</div></article>
+                    <article class="card"><div class="card-icon"><i class="fa-solid fa-arrows-rotate"></i></div><div class="card-title">Dynamic Pantry Deduction</div><div class="card-text">Automatically deduct ingredients when meals are cooked.</div></article>
                 </div>
             </section>
 
-            <!-- TECH STACK -->
-            <section class="section">
+            <!-- ========================= ARCHITECTURE ========================= -->
+            <section id="architecture" class="section">
                 <div class="section-header">
                     <div>
-                        <div class="section-kicker">Technology stack</div>
-                        <h2 class="section-title">Full‑stack implementation with explainable logic</h2>
+                        <div class="section-kicker">System Architecture</div>
+                        <h2 class="section-title">Full‑Stack Implementation</h2>
                     </div>
                     <p class="section-description">
-                        The artefact is implemented as a modern web application with a React.js frontend, Spring Boot
-                        backend, MySQL analytical database and Python preprocessing pipeline for integrating nutrition,
-                        sustainability and recipe datasets.
+                        Overview of the layered architecture and data flow.
                     </p>
                 </div>
 
-                <div class="stack-grid">
-                    <div class="stack-pill">
-                        <i class="fa-brands fa-react"></i>
-                        React.js Frontend
-                    </div>
-                    <div class="stack-pill">
-                        <i class="fa-brands fa-java"></i>
-                        Spring Boot Backend
-                    </div>
-                    <div class="stack-pill">
-                        <i class="fa-solid fa-database"></i>
-                        MySQL Relational Database
-                    </div>
-                    <div class="stack-pill">
-                        <i class="fa-brands fa-python"></i>
-                        Python Data Preprocessing
-                    </div>
-                    <div class="stack-pill">
-                        <i class="fa-solid fa-plug"></i>
-                        REST API Integration
-                    </div>
-                </div>
-            </section>
-
-            <!-- FEATURES -->
-            <section class="section">
-                <div class="section-header">
-                    <div>
-                        <div class="section-kicker">Key system features</div>
-                        <h2 class="section-title">Designed around student realities and explainable decisions</h2>
-                    </div>
-                    <p class="section-description">
-                        The system’s rule‑based engine and interface are informed by literature on student food behaviours,
-                        household food waste and decision‑support explainability, focusing on transparency rather than
-                        black‑box optimisation.
-                    </p>
-                </div>
-
-                <div class="features-grid">
-                    <div class="feature-list">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa-solid fa-list-check"></i>
-                            </div>
-                            <div>
-                                <div class="feature-body-title">Pantry‑aware recommendation behaviour</div>
-                                <div class="feature-body-text">
-                                    Recipes are scored against current pantry contents, prioritising high‑match recipes that
-                                    reuse ingredients already available in the student’s kitchen.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa-solid fa-hourglass-half"></i>
-                            </div>
-                            <div>
-                                <div class="feature-body-title">Expiry‑date prioritisation</div>
-                                <div class="feature-body-text">
-                                    Ingredients are classified by freshness and waste‑risk, enabling recommendation modes
-                                    that bring forward items approaching their use‑by date.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa-solid fa-scale-balanced"></i>
-                            </div>
-                            <div>
-                                <div class="feature-body-title">Sustainability‑aware meal planning</div>
-                                <div class="feature-body-text">
-                                    CO₂e‑based labels and sustainability categories help students compare the relative
-                                    environmental impact of different weekly meal plan options.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa-solid fa-circle-question"></i>
-                            </div>
-                            <div>
-                                <div class="feature-body-title">Explainable recommendation logic</div>
-                                <div class="feature-body-text">
-                                    Rule‑based scoring and SQL analytical views expose how each recipe was selected, making
-                                    the system auditable for academic evaluation and understandable for end users.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa-solid fa-arrows-rotate"></i>
-                            </div>
-                            <div>
-                                <div class="feature-body-title">Dynamic pantry deduction</div>
-                                <div class="feature-body-text">
-                                    When a recipe is marked as cooked, ingredient quantities are deducted from the pantry,
-                                    closing the loop between planning and actual usage.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fa-solid fa-layer-group"></i>
-                            </div>
-                            <div>
-                                <div class="feature-body-title">Integrated nutrition + sustainability + pantry framework</div>
-                                <div class="feature-body-text">
-                                    Unlike many existing tools that treat these areas separately, this artefact unifies
-                                    nutritional optimisation, environmental impact and food‑waste prevention in one system.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <aside class="feature-panel">
-                        <div class="feature-panel-header">
-                            <span>
-                                <i class="fa-solid fa-diagram-project"></i>
-                                Rule‑based decision matrix
-                            </span>
-                            <span>High‑level view of how recommendations are scored</span>
-                        </div>
-
-                        <div class="feature-panel-matrix">
-                            <div class="matrix-row matrix-head">
-                                <div class="matrix-cell">Dimension</div>
-                                <div class="matrix-cell">What is evaluated?</div>
-                                <div class="matrix-cell">How it influences ranking</div>
-                            </div>
-                            <div class="matrix-row">
-                                <div class="matrix-cell matrix-label">Nutritional quality</div>
-                                <div class="matrix-cell">Macro balance vs. NHS Eatwell guidance</div>
-                                <div class="matrix-cell matrix-good">Boosts recipes closer to balanced weekly intake</div>
-                            </div>
-                            <div class="matrix-row">
-                                <div class="matrix-cell matrix-label">Environmental impact (CO₂e)</div>
-                                <div class="matrix-cell">Ingredient‑level CO₂e mapped to recipes</div>
-                                <div class="matrix-cell matrix-neutral">Favours lower‑impact options within constraints</div>
-                            </div>
-                            <div class="matrix-row">
-                                <div class="matrix-cell matrix-label">Pantry reuse &amp; waste‑risk</div>
-                                <div class="matrix-cell">Match with available items and expiry proximity</div>
-                                <div class="matrix-cell matrix-good">Prioritises high‑match, near‑expiry ingredients</div>
-                            </div>
-                        </div>
-                    </aside>
-                </div>
-            </section>
-
-            <!-- ARCHITECTURE & DIAGRAMS -->
-            <section class="section">
-                <div class="section-header">
-                    <div>
-                        <div class="section-kicker">Architecture & data pipeline</div>
-                        <h2 class="section-title">From raw datasets to explainable recommendations</h2>
-                    </div>
-                    <p class="section-description">
-                        The system integrates three core datasets (CoFID 2021, Poore &amp; Nemecek (2018), and a Kaggle
-                        recipe dataset) through a Python preprocessing pipeline, storing analytical outputs in a MySQL
-                        database accessed via a Spring Boot API and presented through a React.js frontend.
-                    </p>
-                </div>
+                <pre class="section-description" style="font-size:13px; line-height:1.6;">
+Python Preprocessing
+        ↓
+MySQL Relational Database
+        ↓
+SQL Analytical Views
+        ↓
+Spring Boot REST APIs
+        ↓
+React Frontend Interface
+                </pre>
 
                 <div class="diagram-grid">
                     <figure class="diagram-card">
-                        <img src="assets/diagrams/architecture.png" alt="System Architecture Diagram">
-                        <figcaption>Overall system architecture (frontend, backend, database and preprocessing layers).</figcaption>
+                        <img src="assets/diagrams/architecture.png" alt="">
+                        <figcaption>Overall system architecture.</figcaption>
                     </figure>
-
                     <figure class="diagram-card">
-                        <img src="assets/diagrams/preprocessing.png" alt="Preprocessing Pipeline Diagram">
-                        <figcaption>Python‑based preprocessing pipeline for nutrition, sustainability and recipe datasets.</figcaption>
-                    </figure>
-
-                    <figure class="diagram-card">
-                        <img src="assets/diagrams/erd.png" alt="Database ERD">
-                        <figcaption>MySQL database ERD, including pantry, recipes, ingredients and analytical views.</figcaption>
-                    </figure>
-
-                    <figure class="diagram-card">
-                        <img src="assets/diagrams/decision-logic.png" alt="Decision Logic Diagram">
-                        <figcaption>Rule‑based decision logic combining nutrition, CO₂e and pantry reuse scores.</figcaption>
+                        <img src="assets/diagrams/preprocessing.png" alt="">
+                        <figcaption>Python preprocessing pipeline.</figcaption>
                     </figure>
                 </div>
             </section>
 
-            <!-- SCREENSHOTS -->
-            <section class="section">
+            <!-- ========================= SCREENSHOTS ========================= -->
+            <section id="screenshots" class="section">
                 <div class="section-header">
                     <div>
                         <div class="section-kicker">Interface</div>
-                        <h2 class="section-title">Screenshots of the working artefact</h2>
+                        <h2 class="section-title">Screenshots</h2>
                     </div>
                     <p class="section-description">
-                        The following screenshots illustrate key parts of the user interface, including the dashboard,
-                        pantry management, weekly planner, recommendation views and pantry deduction behaviour.
+                        Visual overview of the working artefact.
                     </p>
                 </div>
 
                 <div class="screenshots-grid">
-                    <figure class="screenshot-card">
-                        <img src="assets/screenshots/dashboard.png" alt="Dashboard Screenshot">
-                        <figcaption>Dashboard with sustainability and nutrition indicators.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card">
-                        <img src="assets/screenshots/pantry.png" alt="Pantry Screenshot">
-                        <figcaption>Pantry management with freshness and waste‑risk classifications.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card">
-                        <img src="assets/screenshots/weekly-planner.png" alt="Weekly Planner Screenshot">
-                        <figcaption>Weekly meal planner with CO₂e labels and balanced meal options.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card">
-                        <img src="assets/screenshots/recommendation.png" alt="Recommendation Screenshot">
-                        <figcaption>Explainable recommendation view showing pantry match and sustainability indicators.</figcaption>
-                    </figure>
-                    <figure class="screenshot-card">
-                        <img src="assets/screenshots/deduction.png" alt="Pantry Deduction Screenshot">
-                        <figcaption>Pantry quantities before and after marking a recipe as cooked.</figcaption>
-                    </figure>
+                    <figure class="screenshot-card"><img src="assets/screenshots/dashboard.png"><figcaption>Dashboard</figcaption></figure>
+                    <figure class="screenshot-card"><img src="assets/screenshots/pantry.png"><figcaption>Pantry Management</figcaption></figure>
+                    <figure class="screenshot-card"><img src="assets/screenshots/weekly-planner.png"><figcaption>Weekly Planner</figcaption></figure>
+                    <figure class="screenshot-card"><img src="assets/screenshots/recommendation.png"><figcaption>Recommendation View</figcaption></figure>
+                    <figure class="screenshot-card"><img src="assets/screenshots/deduction.png"><figcaption>Pantry Deduction</figcaption></figure>
                 </div>
             </section>
 
-            <!-- DOWNLOAD & ACCESS -->
-            <section class="section">
+            <!-- ========================= RUN SYSTEM ========================= -->
+            <section id="run" class="section">
                 <div class="section-header">
                     <div>
-                        <div class="section-kicker">Documentation & code access</div>
-                        <h2 class="section-title">Dissertation document and private repository</h2>
+                        <div class="section-kicker">How to Run</div>
+                        <h2 class="section-title">Running the Artefact Locally</h2>
                     </div>
                     <p class="section-description">
-                        The full dissertation document provides a detailed account of the research context, methodology,
-                        system design, implementation and evaluation. The source code for the artefact is stored in a
-                        private repository and can be made available to examiners on request.
+                        High‑level instructions for running the system.
                     </p>
                 </div>
 
-                <div class="download-grid">
-                    <div class="download-card">
-                        <div class="download-icon">
-                            <i class="fa-solid fa-file-pdf"></i>
-                        </div>
-                        <div class="download-body">
-                            <h3>Download dissertation (PDF)</h3>
-                            <p>Complete dissertation document including literature review, methodology, results and discussion.</p>
-                            <!-- Replace # with actual PDF link if you upload it -->
-                            <a href="#" class="btn-ghost small">
-                                <i class="fa-solid fa-download"></i>
-                                Download PDF (when available)
-                            </a>
-                        </div>
-                    </div>
+                <h3>Prerequisites</h3>
+                <p class="section-description">Java 17+, Node.js, MySQL, Python 3+</p>
 
-                    <div class="download-card">
-                        <div class="download-icon">
-                            <i class="fa-solid fa-lock"></i>
-                        </div>
-                        <div class="download-body">
-                            <h3>Request access to private repository</h3>
-                            <p>
-                                The full source code (React, Spring Boot, MySQL, Python preprocessing) is stored in a private
-                                repository. Examiners can request access via the student portal or by contacting the author.
-                            </p>
-                            <a href="mailto:your.email@example.com" class="btn-ghost small">
-                                <i class="fa-solid fa-envelope"></i>
-                                Request repository access
-                            </a>
-                        </div>
+                <h3>Backend</h3>
+                <pre>cd backend
+mvn spring-boot:run</pre>
+
+                <h3>Frontend</h3>
+                <pre>cd frontend
+npm install
+npm run dev</pre>
+
+                <h3>Local URLs</h3>
+                <pre>Frontend: http://localhost:5173
+Backend: http://localhost:8080</pre>
+            </section>
+
+            <!-- ========================= CONTACT ========================= -->
+            <section id="contact" class="section">
+                <div class="section-header">
+                    <div>
+                        <div class="section-kicker">Contact</div>
+                        <h2 class="section-title">Repository Access</h2>
                     </div>
                 </div>
+
+                <p class="section-description">
+                    The complete implementation repository is private and can be made available to examiners upon request.
+                </p>
+
+                <a href="mailto:innessyk@gmail.com" class="btn-ghost small">
+                    <i class="fa-solid fa-envelope"></i> Request Repository Access
+                </a>
             </section>
 
         </div>
     </main>
 
+    <!-- ========================= FOOTER ========================= -->
     <footer>
         <div class="footer-inner">
-            <div>
-                © <span id="year"></span> Sustainable Nutrition Recommendation System · Dissertation artefact by Inna Bains
-            </div>
+            <div>© <span id="year"></span> Sustainable Nutrition Recommendation System · Artefact by Inna Bains</div>
             <div class="footer-links">
-                <div class="footer-pill">
-                    <i class="fa-solid fa-book-open"></i>
-                    BSc (Hons) Computing · Arden University
-                </div>
-                <div class="footer-pill">
-                    <i class="fa-solid fa-circle-check"></i>
-                    Rule‑based, interpretable decision‑support framework
-                </div>
+                <div class="footer-pill"><i class="fa-solid fa-book-open"></i> BSc (Hons) Computing · Arden University</div>
+                <div class="footer-pill"><i class="fa-solid fa-circle-check"></i> Rule‑based, interpretable decision‑support</div>
             </div>
         </div>
     </footer>
+
 </div>
 
 <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
