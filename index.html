@@ -321,35 +321,90 @@ React Frontend Interface
 
             </section>
 
-            <!-- ========================= RUN SYSTEM ========================= -->
-            <section id="run" class="section">
-                <div class="section-header">
-                    <div>
-                        <div class="section-kicker">How to Run</div>
-                        <h2 class="section-title">Running the Artefact Locally</h2>
-                    </div>
-                    <p class="section-description">
-                        High‑level instructions for running the system.
-                    </p>
-                </div>
+           <!-- ========================= PROJECT STRUCTURE & RUN ========================= -->
+<section id="run" class="section">
 
-                <h3>Prerequisites</h3>
-                <p class="section-description">Java 17+, Node.js, MySQL, Python 3+</p>
+    <div class="section-header">
+        <div>
+            <div class="section-kicker">Implementation Access</div>
+            <h2 class="section-title">Project Structure & Local Setup</h2>
+        </div>
 
-                <h3>Backend</h3>
-                <pre>cd backend
+        <p class="section-description">
+            High-level overview of the implementation structure and local execution process.
+        </p>
+    </div>
+
+    <p class="section-description">
+        The artefact is organised into separate React frontend and Spring Boot backend projects.
+        The frontend handles the user interface, while the backend exposes REST APIs and connects
+        to the MySQL database used for recommendation processing.
+    </p>
+
+    <div class="project-structure-card">
+<pre>
+Frontend project/
+├── src/
+│   ├── assets/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   ├── LandingPage.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+
+Backend project/
+├── src/main/java/uk/arden/...
+│   ├── controller/
+│   ├── dto/
+│   ├── model/
+│   ├── repository/
+│   ├── service/
+│   └── SustainableNutritionApplication.java
+├── src/main/resources/
+├── test/
+├── pom.xml
+└── mvnw / mvnw.cmd
+</pre>
+    </div>
+
+    <div class="setup-grid">
+
+        <article class="setup-card">
+            <div class="card-icon"><i class="fa-solid fa-list-check"></i></div>
+            <h3>Prerequisites</h3>
+            <p>Java 17+, Node.js, MySQL and Python 3+.</p>
+        </article>
+
+        <article class="setup-card">
+            <div class="card-icon"><i class="fa-brands fa-java"></i></div>
+            <h3>Run Backend</h3>
+<pre>cd backend
 mvn spring-boot:run</pre>
+        </article>
 
-                <h3>Frontend</h3>
-                <pre>cd frontend
+        <article class="setup-card">
+            <div class="card-icon"><i class="fa-brands fa-react"></i></div>
+            <h3>Run Frontend</h3>
+<pre>cd frontend
 npm install
 npm run dev</pre>
+        </article>
 
-                <h3>Local URLs</h3>
-                <pre>Frontend: http://localhost:5173
-Backend: http://localhost:8080</pre>
-            </section>
+        <article class="setup-card">
+            <div class="card-icon"><i class="fa-solid fa-link"></i></div>
+            <h3>Local URLs</h3>
+<pre>Frontend: http://localhost:5173
+Backend:  http://localhost:8080</pre>
+        </article>
 
+    </div>
+
+</section>
             <!-- ========================= CONTACT ========================= -->
             <section id="contact" class="section">
                 <div class="section-header">
