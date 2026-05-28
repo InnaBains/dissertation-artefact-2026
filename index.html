@@ -14,36 +14,7 @@
     <!-- Your CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-    ```html
-<script>
-
-const modal = document.getElementById("imageModal");
-const modalImg = document.getElementById("modalImage");
-
-document.querySelectorAll(".zoomable-image").forEach(img => {
-
-    img.addEventListener("click", function () {
-
-        modal.style.display = "block";
-        modalImg.src = this.src;
-
-    });
-
-});
-
-document.querySelector(".image-modal-close").onclick = function () {
-    modal.style.display = "none";
-};
-
-modal.onclick = function (e) {
-    if (e.target === modal) {
-        modal.style.display = "none";
-    }
-};
-
-</script>
-```
-
+    
 
 <body>
 <div class="page-shell">
@@ -186,7 +157,7 @@ The Sustainable Nutrition Recommendation System is a full-stack web application 
             </section>
 
            
-```html
+
 <!-- ========================= ARCHITECTURE ========================= -->
 <section id="architecture" class="section">
 
@@ -295,43 +266,6 @@ React Frontend Interface
 
 </div>
 
-<!-- ========================= IMAGE ZOOM SCRIPT ========================= -->
-<script>
-
-const modal = document.getElementById("imageModal");
-const modalImg = document.getElementById("modalImage");
-
-document.querySelectorAll(".zoomable-image").forEach(img => {
-
-    img.addEventListener("click", function () {
-
-        modal.style.display = "block";
-        modalImg.src = this.src;
-
-    });
-
-});
-
-document.querySelector(".image-modal-close").onclick = function () {
-
-    modal.style.display = "none";
-
-};
-
-modal.onclick = function (e) {
-
-    if (e.target === modal) {
-
-        modal.style.display = "none";
-
-    }
-
-};
-
-</script>
-
-
-```
 
 
             <!-- ========================= SCREENSHOTS ========================= -->
@@ -420,6 +354,34 @@ Backend: http://localhost:8080</pre>
 
 <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+    <script>
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+
+document.querySelectorAll(".zoomable-image").forEach(img => {
+
+    img.addEventListener("click", function () {
+
+        modal.style.display = "block";
+        modalImg.src = this.src;
+
+    });
+
+});
+
+document.querySelector(".image-modal-close").onclick = function () {
+    modal.style.display = "none";
+};
+
+modal.onclick = function (e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
 </script>
 
 </body>
