@@ -155,19 +155,31 @@ The Sustainable Nutrition Recommendation System is a full-stack web application 
                 </div>
             </section>
 
-            <!-- ========================= ARCHITECTURE ========================= -->
-            <section id="architecture" class="section">
-                <div class="section-header">
-                    <div>
-                        <div class="section-kicker">System Architecture</div>
-                        <h2 class="section-title">Full‑Stack Implementation</h2>
-                    </div>
-                    <p class="section-description">
-                        Overview of the layered architecture and data flow.
-                    </p>
-                </div>
+           ```html
+<!-- ========================= ARCHITECTURE ========================= -->
+<section id="architecture" class="section">
 
-                <pre class="section-description" style="font-size:13px; line-height:1.6;">
+    <div class="section-header">
+        <div>
+            <div class="section-kicker">System Architecture</div>
+            <h2 class="section-title">Full-Stack Implementation</h2>
+        </div>
+
+        <p class="section-description">
+            Overview of the layered architecture, preprocessing workflow,
+            relational database structure and transparent recommendation logic.
+        </p>
+    </div>
+
+    <p class="section-description">
+        The artefact follows a layered architecture where Python preprocessing
+        prepares nutritional, recipe and sustainability datasets,
+        MySQL analytical views support recommendation processing,
+        Spring Boot exposes REST APIs,
+        and the React frontend presents recommendation results through an interactive user interface.
+    </p>
+
+    <pre class="section-description architecture-flow">
 Python Preprocessing
         ↓
 MySQL Relational Database
@@ -177,19 +189,51 @@ SQL Analytical Views
 Spring Boot REST APIs
         ↓
 React Frontend Interface
-                </pre>
+    </pre>
 
-                <div class="diagram-grid">
-                    <figure class="diagram-card">
-                        <img src="assets/diagrams/architecture.png" alt="">
-                        <figcaption>Overall system architecture.</figcaption>
-                    </figure>
-                    <figure class="diagram-card">
-                        <img src="assets/diagrams/preprocessing.png" alt="">
-                        <figcaption>Python preprocessing pipeline.</figcaption>
-                    </figure>
-                </div>
-            </section>
+    <div class="diagram-grid">
+
+        <figure class="diagram-card">
+            <img src="assets/diagrams/architecture.png"
+                 alt="Overall system architecture">
+            <figcaption>
+                Layered architecture showing Python preprocessing,
+                MySQL integration, Spring Boot APIs and React frontend interaction.
+            </figcaption>
+        </figure>
+
+        <figure class="diagram-card">
+            <img src="assets/diagrams/preprocessing.png"
+                 alt="Python preprocessing pipeline">
+            <figcaption>
+                Python preprocessing workflow for nutritional,
+                recipe and sustainability dataset integration.
+            </figcaption>
+        </figure>
+
+        <figure class="diagram-card">
+            <img src="assets/diagrams/erd.png"
+                 alt="Database ERD">
+            <figcaption>
+                MySQL relational schema linking recipes,
+                ingredients, nutrition, sustainability and pantry data.
+            </figcaption>
+        </figure>
+
+        <figure class="diagram-card">
+            <img src="assets/diagrams/recommendation-logic.png"
+                 alt="Recommendation decision logic">
+            <figcaption>
+                Transparent rule-based recommendation logic combining nutrition,
+                CO₂e impact, pantry reuse and expiry-aware prioritisation.
+            </figcaption>
+        </figure>
+
+    </div>
+
+</section>
+```
+
 
             <!-- ========================= SCREENSHOTS ========================= -->
             <section id="screenshots" class="section">
