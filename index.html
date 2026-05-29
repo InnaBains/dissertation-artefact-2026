@@ -33,7 +33,7 @@
                 <a href="#features" class="nav-pill">Features</a>
                 <a href="#architecture" class="nav-pill">Architecture</a>
                 <a href="#screenshots" class="nav-pill">Screenshots</a>
-                <a href="#run" class="nav-pill">Run System</a>
+                <a href="#live-demo" class="nav-pill">Live App</a>
             </div>
 
         </div>
@@ -321,89 +321,52 @@ React Frontend Interface
 
             </section>
 
-           <!-- ========================= PROJECT STRUCTURE & RUN ========================= -->
-<section id="run" class="section">
-
-    <div class="section-header">
-        <div>
-            <div class="section-kicker">Implementation Access</div>
-            <h2 class="section-title">Project Structure & Local Setup</h2>
-        </div>
-
-        <p class="section-description">
-            High-level overview of the implementation structure and local execution process.
-        </p>
+          <section id="live-demo" class="section">
+  <div class="section-header">
+    <div>
+      <div class="section-kicker">Live Deployment</div>
+      <h2 class="section-title">Live Application Access</h2>
     </div>
-
     <p class="section-description">
-        The artefact is organised into separate React frontend and Spring Boot backend projects.
-        The frontend handles the user interface, while the backend exposes REST APIs and connects
-        to the MySQL database used for recommendation processing.
+      Public access to the deployed artefact for demonstration and testing.
     </p>
+  </div>
 
-    <div class="project-structure-card">
-<pre>
-Frontend project/
-├── src/
-│   ├── assets/
-│   ├── App.css
-│   ├── App.jsx
-│   ├── index.css
-│   ├── LandingPage.jsx
-│   └── main.jsx
-├── index.html
-├── package.json
-├── package-lock.json
-├── vite.config.js
-└── README.md
+  <p class="section-description">
+    The Sustainable Nutrition Recommendation System is deployed as a full-stack live demo.
+    The React frontend is hosted on Netlify, the Spring Boot backend is hosted on Render,
+    and the MySQL database is hosted on Railway.
+  </p>
 
-Backend project/
-├── src/main/java/uk/arden/...
-│   ├── controller/
-│   ├── dto/
-│   ├── model/
-│   ├── repository/
-│   ├── service/
-│   └── SustainableNutritionApplication.java
-├── src/main/resources/
-├── test/
-├── pom.xml
-└── mvnw / mvnw.cmd
-</pre>
-    </div>
+  <div class="download-grid">
+    <article class="download-card">
+      <div class="download-icon"><i class="fa-solid fa-globe"></i></div>
+      <div class="download-body">
+        <h3>Open Live Application</h3>
+        <p>
+          Launch the deployed web application and test the dashboard, weekly meal planner,
+          pantry management and recommendation functionality.
+        </p>
+        <a href="https://stalwart-queijadas-6e1fb3.netlify.app"
+           target="_blank"
+           class="btn-primary">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          Open Live Demo
+        </a>
+      </div>
+    </article>
 
-    <div class="setup-grid">
-
-        <article class="setup-card">
-            <div class="card-icon"><i class="fa-solid fa-list-check"></i></div>
-            <h3>Prerequisites</h3>
-            <p>Java 17+, Node.js, MySQL and Python 3+.</p>
-        </article>
-
-        <article class="setup-card">
-            <div class="card-icon"><i class="fa-brands fa-java"></i></div>
-            <h3>Run Backend</h3>
-<pre>cd backend
-mvn spring-boot:run</pre>
-        </article>
-
-        <article class="setup-card">
-            <div class="card-icon"><i class="fa-brands fa-react"></i></div>
-            <h3>Run Frontend</h3>
-<pre>cd frontend
-npm install
-npm run dev</pre>
-        </article>
-
-        <article class="setup-card">
-            <div class="card-icon"><i class="fa-solid fa-link"></i></div>
-            <h3>Local URLs</h3>
-<pre>Frontend: http://localhost:5173
-Backend:  http://localhost:8080</pre>
-        </article>
-
-    </div>
-
+    <article class="download-card">
+      <div class="download-icon"><i class="fa-solid fa-database"></i></div>
+      <div class="download-body">
+        <h3>Demo Database Notice</h3>
+        <p>
+          This deployment uses a shared demonstration database. Pantry quantities,
+          meal-plan results and test data may change when the system is used.
+        </p>
+      </div>
+    </article>
+  </div>
 </section>
             <!-- ========================= CONTACT ========================= -->
             <section id="contact" class="section">
